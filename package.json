@@ -7,9 +7,9 @@
     "scripts": {
         "prepare": "yarn build",
         "prepublishOnly": "yarn test",
-        "version" : "git add -A src",
-        "postversion" : "git push && git push --tags",
-        "build": "tsc",
+        "version": "git add -A src",
+        "postversion": "git push && git push --tags",
+        "build": "rimraf lib && tsc",
         "test": "jest --config jestconfig.json"
     },
     "repository": {
@@ -32,11 +32,10 @@
     },
     "homepage": "https://github.com/pentech-hu/hungarian-postal-codes#readme",
     "devDependencies": {
-        "typescript": "^4.2.2"
-    },
-    "dependencies": {
         "@types/jest": "^26.0.20",
         "jest": "^26.6.3",
-        "ts-jest": "^26.5.2"
+        "rimraf": "^3.0.2",
+        "ts-jest": "^26.5.2",
+        "typescript": "^4.2.2"
     }
 }
