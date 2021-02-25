@@ -1,6 +1,6 @@
 {
     "name": "hungarian-postal-codes",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Finds hunagrian cities, villages by postal code.",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
